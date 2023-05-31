@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/image_bazaar/static/css/main.e7759e66.css",
+    "main.js": "/image_bazaar/static/js/main.8070ec86.js",
+    "static/media/istockphoto-1208290498-612x612.jpg": "/image_bazaar/static/media/istockphoto-1208290498-612x612.c2e79d9f778a893f337d.jpg",
+    "index.html": "/image_bazaar/index.html",
+    "main.e7759e66.css.map": "/image_bazaar/static/css/main.e7759e66.css.map",
+    "main.8070ec86.js.map": "/image_bazaar/static/js/main.8070ec86.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7759e66.css",
+    "static/js/main.8070ec86.js"
+  ]
+}
