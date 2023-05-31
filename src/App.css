@@ -1,38 +1,127 @@
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/istockphoto-1208290498-612x612.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  opacity: 0.7;
+  background-color: rgb(110, 110, 107);
+  height: 2rem;
+  font-size: 1.2rem;
+ text-align: left; 
+ padding-left: 10px;
+ text-shadow: 2px 2px 5px  rgb(235, 117, 117);
+ color: rgb(34, 13, 4);
+ font-weight: 900;
+ border-bottom: 2px rgb(166, 189, 38) solid;
+}
+nav span{
+  color: rgb(6, 59, 5);
+  text-shadow: 2px 2px 5px  rgb(69, 255, 193);
+}
+h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(116, 136, 123);
+}
 .App {
   text-align: center;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image{
+  margin-top: 50px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-evenly;
+  row-gap: 30px;
+  column-gap: 10px;
+  margin-top: 50px;
+}
+.flex{
+  width: 25%;
+  height: 100%;
+  background-color: rgb(142, 148, 144);
+ border: 2px solid rgb(129, 201, 153);
+}
+img{
+border-radius: 10%;
+border: 10px solid rgb(70, 75, 68);
+box-shadow: 1px 1px 5px 4px rgb(37, 37, 37);
+width: 70%;
+height: 50%;
+transition: all ease .5s;
+}
+img:hover{
+  border-radius: 10%;
+  box-shadow: 1px 1px 5px 2px rgb(182, 219, 94);
+}
+p{
+  color: rgb(43, 12, 12);
+  font-weight: 700;
+}
+h5{
+  color: rgb(2, 31, 2);
+  text-transform: capitalize;
+  text-align: center;
+  padding: 10px;
+  opacity: 0.9;
+}
+.search{
+  margin: auto;
+  width: 30%;
+  margin-top:50px;
+  padding:0px 50px 20px 50px;
   color: white;
+  border: .5px solid green;
+  box-shadow: 1px 1px 10px 1px rgb(155, 211, 167);
+  border-radius: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+input{
+  border: 2px solid rgb(14, 116, 65);
+  height: 25px;
+  width: 100%;
+  padding-left: 10px;
+  background-color: rgb(134, 182, 167);
+  color: rgb(15, 15, 15);
+  border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus{
+  outline: none;
+}
+button{
+  color: rgb(220, 230, 225);
+  margin: 10px ;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  background-color: rgb(15, 78, 36);
+  border: none;
+  box-shadow: 1px 1px 5px 1px gray;
+}
+button:hover{
+  background-color: rgb(123, 199, 133);
+  cursor: pointer;
+  color: black;
+}
+img:hover{
+  cursor: pointer;
 }
